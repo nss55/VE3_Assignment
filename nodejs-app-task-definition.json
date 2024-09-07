@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:343218224661:task-definition/ve3_nodeapp_taskdef:3",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:343218224661:task-definition/ve3_nodeapp_taskdef:4",
     "containerDefinitions": [
         {
             "name": "ve3_nodeapp",
-            "image": "343218224661.dkr.ecr.ap-south-1.amazonaws.com/my_ve3_repo",
+            "image": "343218224661.dkr.ecr.ap-south-1.amazonaws.com/:node_ve3",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,10 +16,8 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "systemControls": []
         }
     ],
@@ -27,7 +25,7 @@
     "taskRoleArn": "arn:aws:iam::343218224661:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::343218224661:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 3,
+    "revision": 4,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -61,7 +59,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-09-07T15:47:12.702Z",
+    "registeredAt": "2024-09-07T15:59:56.853Z",
     "registeredBy": "arn:aws:iam::343218224661:user/nitu",
     "tags": []
-}
+}vv
