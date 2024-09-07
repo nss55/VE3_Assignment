@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:343218224661:task-definition/ve3_nodeapp_taskdef:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:343218224661:task-definition/ve3_nodeapp_taskdef:3",
     "containerDefinitions": [
         {
             "name": "ve3_nodeapp",
@@ -24,14 +24,18 @@
         }
     ],
     "family": "ve3_nodeapp_taskdef",
+    "taskRoleArn": "arn:aws:iam::343218224661:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::343218224661:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -57,7 +61,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-09-07T11:45:39.031Z",
+    "registeredAt": "2024-09-07T15:47:12.702Z",
     "registeredBy": "arn:aws:iam::343218224661:user/nitu",
     "tags": []
 }
