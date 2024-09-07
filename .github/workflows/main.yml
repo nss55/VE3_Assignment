@@ -83,7 +83,7 @@ jobs:
         task-definition: nodejs-app-task-definition.json
 
         container-name: ${{ env.CONTAINER_NAME }}
-        image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/myreact_ve3:node_ve3
+        image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/my_ve3_repo:node_ve3
 
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
